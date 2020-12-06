@@ -54,6 +54,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SzelvenyElem_UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SzelvenyElem_UserControl.Designer.cs">
+      <DependentUpon>SzelvenyElem_UserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Szelveny_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SzelvenyElem_UserControl.resx">
+      <DependentUpon>SzelvenyElem_UserControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Szelveny_Form.resx">
       <DependentUpon>Szelveny_Form.cs</DependentUpon>
     </EmbeddedResource>

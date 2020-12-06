@@ -35,11 +35,11 @@
             this.Veglegesites_Button = new System.Windows.Forms.Button();
             this.Hozzaadas_Button = new System.Windows.Forms.Button();
             this.Beolvasas_Button = new System.Windows.Forms.Button();
-            this.Szelveny_DataGridView = new System.Windows.Forms.DataGridView();
             this.Lehetosegek_Listbox = new System.Windows.Forms.ListBox();
             this.Merkozes_Listbox = new System.Windows.Forms.ListBox();
             this.Bajnoksag_Listbox = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Szelveny_DataGridView)).BeginInit();
+            this.Szelveny_ListBox = new System.Windows.Forms.ListBox();
+            this.Torles_Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Szelveny_Label
@@ -80,16 +80,16 @@
             // 
             // Veglegesites_Button
             // 
-            this.Veglegesites_Button.Location = new System.Drawing.Point(903, 362);
+            this.Veglegesites_Button.Location = new System.Drawing.Point(903, 444);
             this.Veglegesites_Button.Name = "Veglegesites_Button";
-            this.Veglegesites_Button.Size = new System.Drawing.Size(224, 23);
+            this.Veglegesites_Button.Size = new System.Drawing.Size(224, 34);
             this.Veglegesites_Button.TabIndex = 17;
             this.Veglegesites_Button.Text = "Szelvény Véglegesítése";
             this.Veglegesites_Button.UseVisualStyleBackColor = true;
             // 
             // Hozzaadas_Button
             // 
-            this.Hozzaadas_Button.Location = new System.Drawing.Point(986, 293);
+            this.Hozzaadas_Button.Location = new System.Drawing.Point(822, 179);
             this.Hozzaadas_Button.Name = "Hozzaadas_Button";
             this.Hozzaadas_Button.Size = new System.Drawing.Size(75, 23);
             this.Hozzaadas_Button.TabIndex = 16;
@@ -104,16 +104,6 @@
             this.Beolvasas_Button.TabIndex = 15;
             this.Beolvasas_Button.Text = "Beolvasás";
             this.Beolvasas_Button.UseVisualStyleBackColor = true;
-            // 
-            // Szelveny_DataGridView
-            // 
-            this.Szelveny_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Szelveny_DataGridView.Location = new System.Drawing.Point(903, 113);
-            this.Szelveny_DataGridView.Name = "Szelveny_DataGridView";
-            this.Szelveny_DataGridView.RowHeadersWidth = 51;
-            this.Szelveny_DataGridView.RowTemplate.Height = 24;
-            this.Szelveny_DataGridView.Size = new System.Drawing.Size(240, 150);
-            this.Szelveny_DataGridView.TabIndex = 14;
             // 
             // Lehetosegek_Listbox
             // 
@@ -142,11 +132,31 @@
             this.Bajnoksag_Listbox.Size = new System.Drawing.Size(230, 340);
             this.Bajnoksag_Listbox.TabIndex = 11;
             // 
+            // Szelveny_ListBox
+            // 
+            this.Szelveny_ListBox.FormattingEnabled = true;
+            this.Szelveny_ListBox.ItemHeight = 16;
+            this.Szelveny_ListBox.Location = new System.Drawing.Point(903, 85);
+            this.Szelveny_ListBox.Name = "Szelveny_ListBox";
+            this.Szelveny_ListBox.Size = new System.Drawing.Size(215, 340);
+            this.Szelveny_ListBox.TabIndex = 22;
+            // 
+            // Torles_Button
+            // 
+            this.Torles_Button.Location = new System.Drawing.Point(822, 295);
+            this.Torles_Button.Name = "Torles_Button";
+            this.Torles_Button.Size = new System.Drawing.Size(75, 23);
+            this.Torles_Button.TabIndex = 23;
+            this.Torles_Button.Text = "Törlés";
+            this.Torles_Button.UseVisualStyleBackColor = true;
+            // 
             // Fogadas_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1164, 450);
+            this.ClientSize = new System.Drawing.Size(1164, 490);
+            this.Controls.Add(this.Torles_Button);
+            this.Controls.Add(this.Szelveny_ListBox);
             this.Controls.Add(this.Szelveny_Label);
             this.Controls.Add(this.Lehetosegek_Label);
             this.Controls.Add(this.Merkozes_Label);
@@ -154,13 +164,11 @@
             this.Controls.Add(this.Veglegesites_Button);
             this.Controls.Add(this.Hozzaadas_Button);
             this.Controls.Add(this.Beolvasas_Button);
-            this.Controls.Add(this.Szelveny_DataGridView);
             this.Controls.Add(this.Lehetosegek_Listbox);
             this.Controls.Add(this.Merkozes_Listbox);
             this.Controls.Add(this.Bajnoksag_Listbox);
             this.Name = "Fogadas_Form";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.Szelveny_DataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,10 +183,11 @@
         private System.Windows.Forms.Button Veglegesites_Button;
         private System.Windows.Forms.Button Hozzaadas_Button;
         private System.Windows.Forms.Button Beolvasas_Button;
-        private System.Windows.Forms.DataGridView Szelveny_DataGridView;
         private System.Windows.Forms.ListBox Lehetosegek_Listbox;
         private System.Windows.Forms.ListBox Merkozes_Listbox;
         private System.Windows.Forms.ListBox Bajnoksag_Listbox;
+        private System.Windows.Forms.ListBox Szelveny_ListBox;
+        private System.Windows.Forms.Button Torles_Button;
     }
 }
 
