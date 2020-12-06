@@ -132,6 +132,7 @@
             this.Bajnoksag_Listbox.Name = "Bajnoksag_Listbox";
             this.Bajnoksag_Listbox.Size = new System.Drawing.Size(230, 340);
             this.Bajnoksag_Listbox.TabIndex = 11;
+            this.Bajnoksag_Listbox.SelectedIndexChanged += new System.EventHandler(this.Bajnoksag_Listbox_SelectedIndexChanged);
             // 
             // Szelveny_ListBox
             // 

@@ -14,6 +14,8 @@ namespace Beadando_IRF
 {
     public partial class Fogadas_Form : Form
     {
+        List <string> championships = new List<string>();
+        XmlDocument doc;
         public Fogadas_Form()
         {
             InitializeComponent();
@@ -30,12 +32,23 @@ namespace Beadando_IRF
             if (ofd.ShowDialog() != DialogResult.OK) return;
             using (StreamReader sr = new StreamReader(ofd.FileName, Encoding.Default))
             {
-                XmlDocument doc = new XmlDocument();
+                doc = new XmlDocument();
                 doc.Load(ofd.FileName);
-                Console.WriteLine(ofd.FileName);
+                foreach (XmlElement element in doc.DocumentElement)
+                {
+                    string championshipName = element.GetAttribute("name");
+                    championships.Add(championshipName);
+                }
 
             }
+            Bajnoksag_Listbox.DataSource = championships;
          
+        }
+
+        private void Bajnoksag_Listbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Console.WriteLine(Bajnoksag_Listbox.SelectedItem);
+
         }
     }
 }
