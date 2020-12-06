@@ -104,6 +104,7 @@
             this.Beolvasas_Button.TabIndex = 15;
             this.Beolvasas_Button.Text = "Beolvasás";
             this.Beolvasas_Button.UseVisualStyleBackColor = true;
+            this.Beolvasas_Button.Click += new System.EventHandler(this.Beolvasas_Button_Click);
             // 
             // Lehetosegek_Listbox
             // 
