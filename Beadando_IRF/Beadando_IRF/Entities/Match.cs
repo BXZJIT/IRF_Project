@@ -13,6 +13,7 @@ namespace Beadando_IRF.Entities
             public string localTeam { get; set; }
             public string visitorTeam { get; set; }
             public string localAndVisitor { get; set; }
-        }
+        public string time { get; set; }
+    }
     
 }

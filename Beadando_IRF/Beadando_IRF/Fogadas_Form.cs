@@ -62,6 +62,7 @@ namespace Beadando_IRF
                     {
                         Match newMatch = new Match();
                         newMatch.id = match.GetAttribute("id");
+                        newMatch.time = match.GetAttribute("time");
                         //Console.WriteLine("NewMatchId: " + match.GetAttribute("id"));
                         string localTeam = "";
                         string visitorTeam = "";
@@ -85,7 +86,7 @@ namespace Beadando_IRF
                         }
 
                         // Meccs hozzáadása listához
-                        newMatch.localAndVisitor = localTeam + "-" + visitorTeam;
+                        newMatch.localAndVisitor = localTeam + "-" + visitorTeam + "-" + newMatch.time;
                         matches.Add(newMatch);
                         //Console.WriteLine("LocalAndVisitor: " + localTeam + "-" + visitorTeam);
                     }
