@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Beadando_IRF
 {
-    public partial class Form1 : Form
+    public partial class Fogadas_Form : Form
     {
-        public Form1()
+        public Fogadas_Form()
         {
             InitializeComponent();
         }
