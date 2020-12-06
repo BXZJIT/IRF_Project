@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Match.cs" />
     <Compile Include="Fogadas_Form.cs">
       <SubType>Form</SubType>
     </Compile>
