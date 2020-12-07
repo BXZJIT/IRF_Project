@@ -95,6 +95,7 @@
             this.Hozzaadas_Button.TabIndex = 16;
             this.Hozzaadas_Button.Text = "Hozzáadás";
             this.Hozzaadas_Button.UseVisualStyleBackColor = true;
+            this.Hozzaadas_Button.Click += new System.EventHandler(this.Hozzaadas_Button_Click);
             // 
             // Beolvasas_Button
             // 

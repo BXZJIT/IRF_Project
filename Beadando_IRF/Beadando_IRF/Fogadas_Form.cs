@@ -195,5 +195,19 @@ namespace Beadando_IRF
             Lehetosegek_Listbox.DisplayMember = "oddNameAndValue";
             Lehetosegek_Listbox.ValueMember = "oddId";
         }
+
+        private void Hozzaadas_Button_Click(object sender, EventArgs e)
+        {
+            SzelvenyElem elemToAdd = (SzelvenyElem)Lehetosegek_Listbox.SelectedItem;
+            // Dummy elem esetén (segéd sor) ne tegyen semmit
+            if (elemToAdd.oddId == "dummy") return;
+
+            // Listbox frissítése
+            playedList.Add(elemToAdd);
+            Szelveny_ListBox.DataSource = new List<SzelvenyElem>();
+            Szelveny_ListBox.DataSource = playedList;
+            Szelveny_ListBox.DisplayMember = "fullDetail";
+            Szelveny_ListBox.ValueMember = "oddId";
+        }
     }
 }
