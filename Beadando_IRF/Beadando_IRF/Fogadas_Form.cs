@@ -17,10 +17,15 @@ namespace Beadando_IRF
     {
         List <string> championships = new List<string>();
         List<Match> matches = new List<Match>();
+        List<SzelvenyElem> oddsList = new List<SzelvenyElem>();
+        List<SzelvenyElem> playedList = new List<SzelvenyElem>();
         XmlDocument doc;
         public Fogadas_Form()
         {
             InitializeComponent();
+            Szelveny_ListBox.DataSource = playedList;
+            Szelveny_ListBox.DisplayMember = "oddNameAndValue";
+            Szelveny_ListBox.ValueMember = "oddId";
         }
 
         private void Beolvasas_Button_Click(object sender, EventArgs e)
@@ -98,8 +103,96 @@ namespace Beadando_IRF
             Merkozes_Listbox.DisplayMember = "localAndVisitor";
             Merkozes_Listbox.ValueMember = "id";
 
+        }
 
+        private void Merkozes_Listbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            oddsList.Clear();
+            Match selectedMatch = (Match)Merkozes_Listbox.SelectedItem;
+            // Kategóriák
+            foreach (XmlElement element in doc.DocumentElement)
+            {
+                if (element.GetAttribute("name") == selectedMatch.categoryName)
+                {
+                    // Meccsek
+                    foreach (XmlElement match in element.FirstChild)
+                    {
+                        if (match.GetAttribute("id") == selectedMatch.id)
+                        {
+                            // Meccs gyermekeinek iterálása
+                            foreach (XmlElement matchChild in match.ChildNodes)
+                            {
+                                if (matchChild.Name == "odds")
+                                {
+                                    // Fogadási lehetőségek iterálása
+                                    foreach (XmlElement oddsChild in matchChild.ChildNodes)
+                                    {
+                                        if (oddsChild.GetAttribute("value") == "Match Winner")
+                                        {
+                                            // Segéd sor
+                                            SzelvenyElem dummyElem = new SzelvenyElem();
+                                            dummyElem.oddId = "dummy";
+                                            dummyElem.oddNameAndValue = "Ki nyeri a meccset?";
+                                            oddsList.Add(dummyElem);
+                                            // Match winner típusú fogadás iterálása
+                                            foreach (XmlElement odd in oddsChild.FirstChild)
+                                            {
+                                                SzelvenyElem newElem = new SzelvenyElem();
+                                                newElem.categoryName = selectedMatch.categoryName;
+                                                newElem.matchId = selectedMatch.id;
+                                                newElem.localTeam = selectedMatch.localTeam;
+                                                newElem.visitorTeam = selectedMatch.visitorTeam;
+                                                newElem.time = selectedMatch.time;
+                                                newElem.oddType = oddsChild.GetAttribute("value");
+                                                newElem.oddName = odd.GetAttribute("name");
+                                                newElem.oddValue = odd.GetAttribute("value");
+                                                newElem.oddNameAndValue = odd.GetAttribute("name") + "-" + odd.GetAttribute("value");
+                                                newElem.oddId = odd.GetAttribute("id");
+                                                newElem.fullDetail = newElem.oddType + "," + newElem.localTeam + "-" + newElem.visitorTeam + " at " + newElem.time + " Odd: " + newElem.oddNameAndValue;
 
+                                                oddsList.Add(newElem);
+                                            }
+                                        }
+
+                                        // Both Teams to score típusú fogaád iterálása
+                                        if (oddsChild.GetAttribute("value") == "Both Teams To Score")
+                                        {
+                                            // Segéd sor
+                                            SzelvenyElem dummyElem = new SzelvenyElem();
+                                            dummyElem.oddId = "dummy";
+                                            dummyElem.oddNameAndValue = "Mindkét csapat rúg gólt?";
+                                            oddsList.Add(dummyElem);
+                                            foreach (XmlElement odd in oddsChild.FirstChild)
+                                            {
+                                                SzelvenyElem newElem = new SzelvenyElem();
+                                                newElem.categoryName = selectedMatch.categoryName;
+                                                newElem.matchId = selectedMatch.id;
+                                                newElem.localTeam = selectedMatch.localTeam;
+                                                newElem.visitorTeam = selectedMatch.visitorTeam;
+                                                newElem.time = selectedMatch.time;
+                                                newElem.oddType = oddsChild.GetAttribute("value");
+                                                newElem.oddName = odd.GetAttribute("name");
+                                                newElem.oddValue = odd.GetAttribute("value");
+                                                newElem.oddNameAndValue = odd.GetAttribute("name") + "-" + odd.GetAttribute("value");
+                                                newElem.oddId = odd.GetAttribute("id");
+                                                newElem.fullDetail = newElem.oddType + "," + newElem.localTeam + "-" + newElem.visitorTeam + "at " + newElem.time + " Odd: " + newElem.oddNameAndValue;
+
+                                                oddsList.Add(newElem);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Listbox frissítése
+            Lehetosegek_Listbox.DataSource = new List<SzelvenyElem>();
+            Lehetosegek_Listbox.DataSource = oddsList;
+            Lehetosegek_Listbox.DisplayMember = "oddNameAndValue";
+            Lehetosegek_Listbox.ValueMember = "oddId";
         }
     }
 }

@@ -54,7 +54,7 @@
             // Lehetosegek_Label
             // 
             this.Lehetosegek_Label.AutoSize = true;
-            this.Lehetosegek_Label.Location = new System.Drawing.Point(601, 55);
+            this.Lehetosegek_Label.Location = new System.Drawing.Point(544, 55);
             this.Lehetosegek_Label.Name = "Lehetosegek_Label";
             this.Lehetosegek_Label.Size = new System.Drawing.Size(147, 17);
             this.Lehetosegek_Label.TabIndex = 20;
@@ -63,7 +63,7 @@
             // Merkozes_Label
             // 
             this.Merkozes_Label.AutoSize = true;
-            this.Merkozes_Label.Location = new System.Drawing.Point(308, 55);
+            this.Merkozes_Label.Location = new System.Drawing.Point(279, 55);
             this.Merkozes_Label.Name = "Merkozes_Label";
             this.Merkozes_Label.Size = new System.Drawing.Size(69, 17);
             this.Merkozes_Label.TabIndex = 19;
@@ -72,7 +72,7 @@
             // Bajnoksag_Label
             // 
             this.Bajnoksag_Label.AutoSize = true;
-            this.Bajnoksag_Label.Location = new System.Drawing.Point(22, 55);
+            this.Bajnoksag_Label.Location = new System.Drawing.Point(4, 55);
             this.Bajnoksag_Label.Name = "Bajnoksag_Label";
             this.Bajnoksag_Label.Size = new System.Drawing.Size(74, 17);
             this.Bajnoksag_Label.TabIndex = 18;
@@ -80,7 +80,7 @@
             // 
             // Veglegesites_Button
             // 
-            this.Veglegesites_Button.Location = new System.Drawing.Point(903, 444);
+            this.Veglegesites_Button.Location = new System.Drawing.Point(928, 444);
             this.Veglegesites_Button.Name = "Veglegesites_Button";
             this.Veglegesites_Button.Size = new System.Drawing.Size(224, 34);
             this.Veglegesites_Button.TabIndex = 17;
@@ -110,27 +110,28 @@
             // 
             this.Lehetosegek_Listbox.FormattingEnabled = true;
             this.Lehetosegek_Listbox.ItemHeight = 16;
-            this.Lehetosegek_Listbox.Location = new System.Drawing.Point(604, 85);
+            this.Lehetosegek_Listbox.Location = new System.Drawing.Point(547, 85);
             this.Lehetosegek_Listbox.Name = "Lehetosegek_Listbox";
-            this.Lehetosegek_Listbox.Size = new System.Drawing.Size(215, 340);
+            this.Lehetosegek_Listbox.Size = new System.Drawing.Size(272, 340);
             this.Lehetosegek_Listbox.TabIndex = 13;
             // 
             // Merkozes_Listbox
             // 
             this.Merkozes_Listbox.FormattingEnabled = true;
             this.Merkozes_Listbox.ItemHeight = 16;
-            this.Merkozes_Listbox.Location = new System.Drawing.Point(311, 85);
+            this.Merkozes_Listbox.Location = new System.Drawing.Point(282, 85);
             this.Merkozes_Listbox.Name = "Merkozes_Listbox";
-            this.Merkozes_Listbox.Size = new System.Drawing.Size(220, 340);
+            this.Merkozes_Listbox.Size = new System.Drawing.Size(259, 340);
             this.Merkozes_Listbox.TabIndex = 12;
+            this.Merkozes_Listbox.SelectedIndexChanged += new System.EventHandler(this.Merkozes_Listbox_SelectedIndexChanged);
             // 
             // Bajnoksag_Listbox
             // 
             this.Bajnoksag_Listbox.FormattingEnabled = true;
             this.Bajnoksag_Listbox.ItemHeight = 16;
-            this.Bajnoksag_Listbox.Location = new System.Drawing.Point(21, 85);
+            this.Bajnoksag_Listbox.Location = new System.Drawing.Point(7, 85);
             this.Bajnoksag_Listbox.Name = "Bajnoksag_Listbox";
-            this.Bajnoksag_Listbox.Size = new System.Drawing.Size(230, 340);
+            this.Bajnoksag_Listbox.Size = new System.Drawing.Size(269, 340);
             this.Bajnoksag_Listbox.TabIndex = 11;
             this.Bajnoksag_Listbox.SelectedIndexChanged += new System.EventHandler(this.Bajnoksag_Listbox_SelectedIndexChanged);
             // 
@@ -140,7 +141,7 @@
             this.Szelveny_ListBox.ItemHeight = 16;
             this.Szelveny_ListBox.Location = new System.Drawing.Point(903, 85);
             this.Szelveny_ListBox.Name = "Szelveny_ListBox";
-            this.Szelveny_ListBox.Size = new System.Drawing.Size(215, 340);
+            this.Szelveny_ListBox.Size = new System.Drawing.Size(256, 340);
             this.Szelveny_ListBox.TabIndex = 22;
             // 
             // Torles_Button
