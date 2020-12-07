@@ -209,5 +209,14 @@ namespace Beadando_IRF
             Szelveny_ListBox.DisplayMember = "fullDetail";
             Szelveny_ListBox.ValueMember = "oddId";
         }
+
+        private void Torles_Button_Click(object sender, EventArgs e)
+        {
+            // Listbox frissítése
+            //SzelvenyElem elemToDelete = (SzelvenyElem)Szelveny_ListBox.SelectedItem;
+            playedList.RemoveAt(Szelveny_ListBox.SelectedIndex);
+            Szelveny_ListBox.DataSource = new List<SzelvenyElem>();
+            Szelveny_ListBox.DataSource = playedList;
+        }
     }
 }

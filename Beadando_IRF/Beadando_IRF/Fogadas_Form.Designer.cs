@@ -153,6 +153,7 @@
             this.Torles_Button.TabIndex = 23;
             this.Torles_Button.Text = "Törlés";
             this.Torles_Button.UseVisualStyleBackColor = true;
+            this.Torles_Button.Click += new System.EventHandler(this.Torles_Button_Click);
             // 
             // Fogadas_Form
             // 
