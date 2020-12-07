@@ -69,6 +69,7 @@ namespace Beadando_IRF
                         newMatch.id = match.GetAttribute("id");
                         newMatch.time = match.GetAttribute("time");
                         //Console.WriteLine("NewMatchId: " + match.GetAttribute("id"));
+                        newMatch.categoryName = Bajnoksag_Listbox.SelectedItem.ToString();
                         string localTeam = "";
                         string visitorTeam = "";
 
