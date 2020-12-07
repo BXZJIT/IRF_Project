@@ -146,8 +146,9 @@ namespace Beadando_IRF
                                                 newElem.time = selectedMatch.time;
                                                 newElem.oddType = oddsChild.GetAttribute("value");
                                                 newElem.oddName = odd.GetAttribute("name");
-                                                newElem.oddValue = odd.GetAttribute("value");
-                                                newElem.oddNameAndValue = odd.GetAttribute("name") + "-" + odd.GetAttribute("value");
+                                                string oddReplaced = odd.GetAttribute("value").Replace('.', ',');
+                                                newElem.oddValue = oddReplaced;
+                                                newElem.oddNameAndValue = odd.GetAttribute("name") + "-" + oddReplaced;
                                                 newElem.oddId = odd.GetAttribute("id");
                                                 newElem.fullDetail = newElem.oddType + "," + newElem.localTeam + "-" + newElem.visitorTeam + " at " + newElem.time + " Odd: " + newElem.oddNameAndValue;
 
@@ -173,10 +174,11 @@ namespace Beadando_IRF
                                                 newElem.time = selectedMatch.time;
                                                 newElem.oddType = oddsChild.GetAttribute("value");
                                                 newElem.oddName = odd.GetAttribute("name");
-                                                newElem.oddValue = odd.GetAttribute("value");
-                                                newElem.oddNameAndValue = odd.GetAttribute("name") + "-" + odd.GetAttribute("value");
+                                                string oddReplaced = odd.GetAttribute("value").Replace('.', ',');
+                                                newElem.oddValue = oddReplaced;
+                                                newElem.oddNameAndValue = odd.GetAttribute("name") + "-" + oddReplaced;
                                                 newElem.oddId = odd.GetAttribute("id");
-                                                newElem.fullDetail = newElem.oddType + "," + newElem.localTeam + "-" + newElem.visitorTeam + "at " + newElem.time + " Odd: " + newElem.oddNameAndValue;
+                                                newElem.fullDetail = newElem.oddType + "," + newElem.localTeam + "-" + newElem.visitorTeam + " at " + newElem.time + " Odd: " + newElem.oddNameAndValue;
 
                                                 oddsList.Add(newElem);
                                             }
@@ -217,6 +219,12 @@ namespace Beadando_IRF
             playedList.RemoveAt(Szelveny_ListBox.SelectedIndex);
             Szelveny_ListBox.DataSource = new List<SzelvenyElem>();
             Szelveny_ListBox.DataSource = playedList;
+        }
+
+        private void Veglegesites_Button_Click(object sender, EventArgs e)
+        {
+            Szelveny_Form newForm = new Szelveny_Form(playedList);
+            newForm.ShowDialog();
         }
     }
 }

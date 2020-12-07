@@ -33,7 +33,7 @@
             this.Exportalas_Button = new System.Windows.Forms.Button();
             this.OsszesSzorzo_Label = new System.Windows.Forms.Label();
             this.VarhatoNyeremeny_Label = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Nyeremeny_Label = new System.Windows.Forms.Label();
             this.Tet_Label = new System.Windows.Forms.Label();
             this.SzorzoErtek_Label = new System.Windows.Forms.Label();
             this.Tet_TextBox = new System.Windows.Forms.TextBox();
@@ -73,14 +73,14 @@
             this.VarhatoNyeremeny_Label.TabIndex = 3;
             this.VarhatoNyeremeny_Label.Text = "Várható Nyeremény";
             // 
-            // label3
+            // Nyeremeny_Label
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(170, 391);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
+            this.Nyeremeny_Label.AutoSize = true;
+            this.Nyeremeny_Label.Location = new System.Drawing.Point(170, 391);
+            this.Nyeremeny_Label.Name = "Nyeremeny_Label";
+            this.Nyeremeny_Label.Size = new System.Drawing.Size(123, 17);
+            this.Nyeremeny_Label.TabIndex = 4;
+            this.Nyeremeny_Label.Text = "Nyeremeny_Label";
             // 
             // Tet_Label
             // 
@@ -106,6 +106,8 @@
             this.Tet_TextBox.Name = "Tet_TextBox";
             this.Tet_TextBox.Size = new System.Drawing.Size(122, 22);
             this.Tet_TextBox.TabIndex = 7;
+            this.Tet_TextBox.Text = "100";
+            this.Tet_TextBox.TextChanged += new System.EventHandler(this.Tet_TextBox_TextChanged);
             // 
             // Szelveny_Form
             // 
@@ -115,7 +117,7 @@
             this.Controls.Add(this.Tet_TextBox);
             this.Controls.Add(this.SzorzoErtek_Label);
             this.Controls.Add(this.Tet_Label);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.Nyeremeny_Label);
             this.Controls.Add(this.VarhatoNyeremeny_Label);
             this.Controls.Add(this.OsszesSzorzo_Label);
             this.Controls.Add(this.Exportalas_Button);
@@ -134,7 +136,7 @@
         private System.Windows.Forms.Button Exportalas_Button;
         private System.Windows.Forms.Label OsszesSzorzo_Label;
         private System.Windows.Forms.Label VarhatoNyeremeny_Label;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Nyeremeny_Label;
         private System.Windows.Forms.Label Tet_Label;
         private System.Windows.Forms.Label SzorzoErtek_Label;
         private System.Windows.Forms.TextBox Tet_TextBox;

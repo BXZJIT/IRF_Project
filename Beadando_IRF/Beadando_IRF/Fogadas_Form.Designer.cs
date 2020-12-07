@@ -45,7 +45,7 @@
             // Szelveny_Label
             // 
             this.Szelveny_Label.AutoSize = true;
-            this.Szelveny_Label.Location = new System.Drawing.Point(900, 55);
+            this.Szelveny_Label.Location = new System.Drawing.Point(977, 55);
             this.Szelveny_Label.Name = "Szelveny_Label";
             this.Szelveny_Label.Size = new System.Drawing.Size(65, 17);
             this.Szelveny_Label.TabIndex = 21;
@@ -86,12 +86,13 @@
             this.Veglegesites_Button.TabIndex = 17;
             this.Veglegesites_Button.Text = "Szelvény Véglegesítése";
             this.Veglegesites_Button.UseVisualStyleBackColor = true;
+            this.Veglegesites_Button.Click += new System.EventHandler(this.Veglegesites_Button_Click);
             // 
             // Hozzaadas_Button
             // 
-            this.Hozzaadas_Button.Location = new System.Drawing.Point(822, 179);
+            this.Hozzaadas_Button.Location = new System.Drawing.Point(840, 181);
             this.Hozzaadas_Button.Name = "Hozzaadas_Button";
-            this.Hozzaadas_Button.Size = new System.Drawing.Size(75, 23);
+            this.Hozzaadas_Button.Size = new System.Drawing.Size(124, 23);
             this.Hozzaadas_Button.TabIndex = 16;
             this.Hozzaadas_Button.Text = "Hozzáadás";
             this.Hozzaadas_Button.UseVisualStyleBackColor = true;
@@ -140,16 +141,16 @@
             // 
             this.Szelveny_ListBox.FormattingEnabled = true;
             this.Szelveny_ListBox.ItemHeight = 16;
-            this.Szelveny_ListBox.Location = new System.Drawing.Point(903, 85);
+            this.Szelveny_ListBox.Location = new System.Drawing.Point(980, 85);
             this.Szelveny_ListBox.Name = "Szelveny_ListBox";
-            this.Szelveny_ListBox.Size = new System.Drawing.Size(256, 340);
+            this.Szelveny_ListBox.Size = new System.Drawing.Size(480, 340);
             this.Szelveny_ListBox.TabIndex = 22;
             // 
             // Torles_Button
             // 
-            this.Torles_Button.Location = new System.Drawing.Point(822, 295);
+            this.Torles_Button.Location = new System.Drawing.Point(840, 295);
             this.Torles_Button.Name = "Torles_Button";
-            this.Torles_Button.Size = new System.Drawing.Size(75, 23);
+            this.Torles_Button.Size = new System.Drawing.Size(124, 23);
             this.Torles_Button.TabIndex = 23;
             this.Torles_Button.Text = "Törlés";
             this.Torles_Button.UseVisualStyleBackColor = true;
@@ -159,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1164, 490);
+            this.ClientSize = new System.Drawing.Size(1617, 595);
             this.Controls.Add(this.Torles_Button);
             this.Controls.Add(this.Szelveny_ListBox);
             this.Controls.Add(this.Szelveny_Label);
