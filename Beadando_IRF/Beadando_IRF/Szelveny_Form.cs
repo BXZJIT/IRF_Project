@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -28,7 +29,7 @@ namespace Beadando_IRF
             if (!(String.IsNullOrEmpty(Tet_TextBox.Text)))
             {
                 decimal betMoney = decimal.Parse(Tet_TextBox.Text);
-                Nyeremeny_Label.Text = (finalOdds * betMoney).ToString();
+                Nyeremeny_Label.Text = Math.Round((finalOdds * betMoney),0).ToString();
             }
             else
             {
@@ -48,7 +49,7 @@ namespace Beadando_IRF
                     finalOdds = finalOdds * decimal.Parse(betList[i].oddValue);
                 }
             }
-            SzorzoErtek_Label.Text = finalOdds.ToString();
+            SzorzoErtek_Label.Text = Math.Round(finalOdds,2).ToString();
         }
 
         private void ShowSzelvenyElems()
