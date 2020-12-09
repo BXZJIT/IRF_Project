@@ -36,6 +36,7 @@
             // SZE_Bajnoksag_Label
             // 
             this.SZE_Bajnoksag_Label.AutoSize = true;
+            this.SZE_Bajnoksag_Label.ForeColor = System.Drawing.Color.White;
             this.SZE_Bajnoksag_Label.Location = new System.Drawing.Point(4, 4);
             this.SZE_Bajnoksag_Label.Name = "SZE_Bajnoksag_Label";
             this.SZE_Bajnoksag_Label.Size = new System.Drawing.Size(46, 17);
@@ -45,6 +46,7 @@
             // SZE_Merkozes_Label
             // 
             this.SZE_Merkozes_Label.AutoSize = true;
+            this.SZE_Merkozes_Label.ForeColor = System.Drawing.Color.White;
             this.SZE_Merkozes_Label.Location = new System.Drawing.Point(397, 4);
             this.SZE_Merkozes_Label.Name = "SZE_Merkozes_Label";
             this.SZE_Merkozes_Label.Size = new System.Drawing.Size(46, 17);
@@ -54,6 +56,7 @@
             // SZE_Fogadas_Label
             // 
             this.SZE_Fogadas_Label.AutoSize = true;
+            this.SZE_Fogadas_Label.ForeColor = System.Drawing.Color.White;
             this.SZE_Fogadas_Label.Location = new System.Drawing.Point(745, 4);
             this.SZE_Fogadas_Label.Name = "SZE_Fogadas_Label";
             this.SZE_Fogadas_Label.Size = new System.Drawing.Size(46, 17);

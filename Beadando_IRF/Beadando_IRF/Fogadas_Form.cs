@@ -133,7 +133,7 @@ namespace Beadando_IRF
                                             // Segéd sor
                                             SzelvenyElem dummyElem = new SzelvenyElem();
                                             dummyElem.oddId = "dummy";
-                                            dummyElem.oddNameAndValue = "Ki nyeri a meccset?";
+                                            dummyElem.oddNameAndValue = "Match Winner";
                                             oddsList.Add(dummyElem);
                                             // Match winner típusú fogadás iterálása
                                             foreach (XmlElement odd in oddsChild.FirstChild)
@@ -162,7 +162,7 @@ namespace Beadando_IRF
                                             // Segéd sor
                                             SzelvenyElem dummyElem = new SzelvenyElem();
                                             dummyElem.oddId = "dummy";
-                                            dummyElem.oddNameAndValue = "Mindkét csapat rúg gólt?";
+                                            dummyElem.oddNameAndValue = "Both Teams To Score";
                                             oddsList.Add(dummyElem);
                                             foreach (XmlElement odd in oddsChild.FirstChild)
                                             {

@@ -58,6 +58,7 @@
             this.Exportalas_Button.TabIndex = 1;
             this.Exportalas_Button.Text = "Exportálás";
             this.Exportalas_Button.UseVisualStyleBackColor = false;
+            this.Exportalas_Button.Click += new System.EventHandler(this.Exportalas_Button_Click);
             // 
             // OsszesSzorzo_Label
             // 
