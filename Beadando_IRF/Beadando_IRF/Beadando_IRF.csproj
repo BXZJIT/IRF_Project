@@ -47,6 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Match.cs" />
+    <Compile Include="Entities\Smiley.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Fogadas_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,7 +58,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SzelvenyElem.cs" />
+    <Compile Include="Entities\SzelvenyElem.cs" />
     <Compile Include="SzelvenyElem_UserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>

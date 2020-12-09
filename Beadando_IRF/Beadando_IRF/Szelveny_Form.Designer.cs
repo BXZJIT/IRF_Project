@@ -37,6 +37,7 @@
             this.Tet_Label = new System.Windows.Forms.Label();
             this.SzorzoErtek_Label = new System.Windows.Forms.Label();
             this.Tet_TextBox = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // Szelveny_Panel
@@ -52,7 +53,7 @@
             this.Exportalas_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Exportalas_Button.FlatAppearance.BorderSize = 2;
             this.Exportalas_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Exportalas_Button.Location = new System.Drawing.Point(555, 403);
+            this.Exportalas_Button.Location = new System.Drawing.Point(796, 375);
             this.Exportalas_Button.Name = "Exportalas_Button";
             this.Exportalas_Button.Size = new System.Drawing.Size(96, 33);
             this.Exportalas_Button.TabIndex = 1;
@@ -126,12 +127,20 @@
             this.Tet_TextBox.Text = "100";
             this.Tet_TextBox.TextChanged += new System.EventHandler(this.Tet_TextBox_TextChanged);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(910, 352);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(248, 69);
+            this.panel1.TabIndex = 8;
+            // 
             // Szelveny_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(1170, 481);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Tet_TextBox);
             this.Controls.Add(this.SzorzoErtek_Label);
             this.Controls.Add(this.Tet_Label);
@@ -158,5 +167,6 @@
         private System.Windows.Forms.Label Tet_Label;
         private System.Windows.Forms.Label SzorzoErtek_Label;
         private System.Windows.Forms.TextBox Tet_TextBox;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Beadando_IRF.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,8 @@ namespace Beadando_IRF
             ShowSzelvenyElems();
             SetFinalOdd();
             SetProfit();
+            Smiley smileyFace = new Smiley();
+            panel1.Controls.Add(smileyFace);
         }
 
         private void SetProfit()
