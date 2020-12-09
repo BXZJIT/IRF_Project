@@ -48,7 +48,7 @@
             // 
             // Exportalas_Button
             // 
-            this.Exportalas_Button.BackColor = System.Drawing.Color.Khaki;
+            this.Exportalas_Button.BackColor = System.Drawing.Color.Azure;
             this.Exportalas_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Exportalas_Button.FlatAppearance.BorderSize = 2;
             this.Exportalas_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -63,9 +63,10 @@
             // 
             this.OsszesSzorzo_Label.AutoSize = true;
             this.OsszesSzorzo_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.OsszesSzorzo_Label.ForeColor = System.Drawing.Color.White;
             this.OsszesSzorzo_Label.Location = new System.Drawing.Point(12, 317);
             this.OsszesSzorzo_Label.Name = "OsszesSzorzo_Label";
-            this.OsszesSzorzo_Label.Size = new System.Drawing.Size(145, 21);
+            this.OsszesSzorzo_Label.Size = new System.Drawing.Size(116, 17);
             this.OsszesSzorzo_Label.TabIndex = 2;
             this.OsszesSzorzo_Label.Text = "Összes Szorzó";
             // 
@@ -73,9 +74,10 @@
             // 
             this.VarhatoNyeremeny_Label.AutoSize = true;
             this.VarhatoNyeremeny_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.VarhatoNyeremeny_Label.ForeColor = System.Drawing.Color.White;
             this.VarhatoNyeremeny_Label.Location = new System.Drawing.Point(15, 391);
             this.VarhatoNyeremeny_Label.Name = "VarhatoNyeremeny_Label";
-            this.VarhatoNyeremeny_Label.Size = new System.Drawing.Size(189, 21);
+            this.VarhatoNyeremeny_Label.Size = new System.Drawing.Size(151, 17);
             this.VarhatoNyeremeny_Label.TabIndex = 3;
             this.VarhatoNyeremeny_Label.Text = "Várható Nyeremény";
             // 
@@ -83,9 +85,10 @@
             // 
             this.Nyeremeny_Label.AutoSize = true;
             this.Nyeremeny_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Nyeremeny_Label.ForeColor = System.Drawing.Color.White;
             this.Nyeremeny_Label.Location = new System.Drawing.Point(170, 391);
             this.Nyeremeny_Label.Name = "Nyeremeny_Label";
-            this.Nyeremeny_Label.Size = new System.Drawing.Size(173, 21);
+            this.Nyeremeny_Label.Size = new System.Drawing.Size(138, 17);
             this.Nyeremeny_Label.TabIndex = 4;
             this.Nyeremeny_Label.Text = "Nyeremeny_Label";
             // 
@@ -93,9 +96,10 @@
             // 
             this.Tet_Label.AutoSize = true;
             this.Tet_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Tet_Label.ForeColor = System.Drawing.Color.White;
             this.Tet_Label.Location = new System.Drawing.Point(15, 352);
             this.Tet_Label.Name = "Tet_Label";
-            this.Tet_Label.Size = new System.Drawing.Size(144, 21);
+            this.Tet_Label.Size = new System.Drawing.Size(115, 17);
             this.Tet_Label.TabIndex = 5;
             this.Tet_Label.Text = "Megjátszott tét";
             // 
@@ -103,6 +107,7 @@
             // 
             this.SzorzoErtek_Label.AutoSize = true;
             this.SzorzoErtek_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.SzorzoErtek_Label.ForeColor = System.Drawing.Color.White;
             this.SzorzoErtek_Label.Location = new System.Drawing.Point(170, 317);
             this.SzorzoErtek_Label.Name = "SzorzoErtek_Label";
             this.SzorzoErtek_Label.Size = new System.Drawing.Size(52, 17);
@@ -111,7 +116,7 @@
             // 
             // Tet_TextBox
             // 
-            this.Tet_TextBox.BackColor = System.Drawing.Color.Khaki;
+            this.Tet_TextBox.BackColor = System.Drawing.Color.Azure;
             this.Tet_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Tet_TextBox.Location = new System.Drawing.Point(173, 352);
             this.Tet_TextBox.Name = "Tet_TextBox";
@@ -124,7 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Olive;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(1170, 481);
             this.Controls.Add(this.Tet_TextBox);
             this.Controls.Add(this.SzorzoErtek_Label);

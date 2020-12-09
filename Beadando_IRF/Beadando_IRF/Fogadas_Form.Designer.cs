@@ -46,6 +46,7 @@
             // 
             this.Szelveny_Label.AutoSize = true;
             this.Szelveny_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Szelveny_Label.ForeColor = System.Drawing.Color.White;
             this.Szelveny_Label.Location = new System.Drawing.Point(959, 87);
             this.Szelveny_Label.Name = "Szelveny_Label";
             this.Szelveny_Label.Size = new System.Drawing.Size(73, 17);
@@ -56,6 +57,7 @@
             // 
             this.Lehetosegek_Label.AutoSize = true;
             this.Lehetosegek_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Lehetosegek_Label.ForeColor = System.Drawing.Color.White;
             this.Lehetosegek_Label.Location = new System.Drawing.Point(554, 87);
             this.Lehetosegek_Label.Name = "Lehetosegek_Label";
             this.Lehetosegek_Label.Size = new System.Drawing.Size(167, 17);
@@ -66,6 +68,7 @@
             // 
             this.Merkozes_Label.AutoSize = true;
             this.Merkozes_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Merkozes_Label.ForeColor = System.Drawing.Color.White;
             this.Merkozes_Label.Location = new System.Drawing.Point(279, 87);
             this.Merkozes_Label.Name = "Merkozes_Label";
             this.Merkozes_Label.Size = new System.Drawing.Size(77, 17);
@@ -76,6 +79,7 @@
             // 
             this.Bajnoksag_Label.AutoSize = true;
             this.Bajnoksag_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Bajnoksag_Label.ForeColor = System.Drawing.Color.White;
             this.Bajnoksag_Label.Location = new System.Drawing.Point(4, 87);
             this.Bajnoksag_Label.Name = "Bajnoksag_Label";
             this.Bajnoksag_Label.Size = new System.Drawing.Size(83, 17);
@@ -84,7 +88,7 @@
             // 
             // Veglegesites_Button
             // 
-            this.Veglegesites_Button.BackColor = System.Drawing.Color.Khaki;
+            this.Veglegesites_Button.BackColor = System.Drawing.Color.Azure;
             this.Veglegesites_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Veglegesites_Button.FlatAppearance.BorderSize = 2;
             this.Veglegesites_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -99,7 +103,7 @@
             // 
             // Hozzaadas_Button
             // 
-            this.Hozzaadas_Button.BackColor = System.Drawing.Color.Khaki;
+            this.Hozzaadas_Button.BackColor = System.Drawing.Color.Azure;
             this.Hozzaadas_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Hozzaadas_Button.FlatAppearance.BorderSize = 2;
             this.Hozzaadas_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -114,7 +118,7 @@
             // 
             // Beolvasas_Button
             // 
-            this.Beolvasas_Button.BackColor = System.Drawing.Color.Khaki;
+            this.Beolvasas_Button.BackColor = System.Drawing.Color.Azure;
             this.Beolvasas_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Beolvasas_Button.FlatAppearance.BorderSize = 2;
             this.Beolvasas_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -129,7 +133,7 @@
             // 
             // Lehetosegek_Listbox
             // 
-            this.Lehetosegek_Listbox.BackColor = System.Drawing.Color.Khaki;
+            this.Lehetosegek_Listbox.BackColor = System.Drawing.Color.Azure;
             this.Lehetosegek_Listbox.FormattingEnabled = true;
             this.Lehetosegek_Listbox.ItemHeight = 16;
             this.Lehetosegek_Listbox.Location = new System.Drawing.Point(557, 138);
@@ -139,7 +143,7 @@
             // 
             // Merkozes_Listbox
             // 
-            this.Merkozes_Listbox.BackColor = System.Drawing.Color.Khaki;
+            this.Merkozes_Listbox.BackColor = System.Drawing.Color.Azure;
             this.Merkozes_Listbox.FormattingEnabled = true;
             this.Merkozes_Listbox.ItemHeight = 16;
             this.Merkozes_Listbox.Location = new System.Drawing.Point(282, 138);
@@ -150,7 +154,7 @@
             // 
             // Bajnoksag_Listbox
             // 
-            this.Bajnoksag_Listbox.BackColor = System.Drawing.Color.Khaki;
+            this.Bajnoksag_Listbox.BackColor = System.Drawing.Color.Azure;
             this.Bajnoksag_Listbox.FormattingEnabled = true;
             this.Bajnoksag_Listbox.ItemHeight = 16;
             this.Bajnoksag_Listbox.Location = new System.Drawing.Point(7, 138);
@@ -161,7 +165,7 @@
             // 
             // Torles_Button
             // 
-            this.Torles_Button.BackColor = System.Drawing.Color.Khaki;
+            this.Torles_Button.BackColor = System.Drawing.Color.Azure;
             this.Torles_Button.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.Torles_Button.FlatAppearance.BorderSize = 2;
             this.Torles_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -176,7 +180,7 @@
             // 
             // Szelveny_ListBox
             // 
-            this.Szelveny_ListBox.BackColor = System.Drawing.Color.Khaki;
+            this.Szelveny_ListBox.BackColor = System.Drawing.Color.Azure;
             this.Szelveny_ListBox.FormattingEnabled = true;
             this.Szelveny_ListBox.ItemHeight = 16;
             this.Szelveny_ListBox.Location = new System.Drawing.Point(962, 138);
@@ -188,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Olive;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(1617, 595);
             this.Controls.Add(this.Torles_Button);
             this.Controls.Add(this.Szelveny_ListBox);

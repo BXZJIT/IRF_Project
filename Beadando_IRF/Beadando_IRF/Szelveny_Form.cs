@@ -28,7 +28,7 @@ namespace Beadando_IRF
         {
             if (!(String.IsNullOrEmpty(Tet_TextBox.Text)))
             {
-                decimal betMoney = decimal.Parse(Tet_TextBox.Text);
+               decimal betMoney = decimal.Parse(Tet_TextBox.Text);
                 Nyeremeny_Label.Text = Math.Round((finalOdds * betMoney),0).ToString();
             }
             else
@@ -70,5 +70,6 @@ namespace Beadando_IRF
         {
             SetProfit();
         }
+
     }
 }

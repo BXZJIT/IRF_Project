@@ -63,7 +63,7 @@ namespace Beadando_IRF
                 if (element.GetAttribute("name") == selectedChampionship)
                 {
                     // Meccsek
-                    foreach (XmlElement match in element.FirstChild)
+                    foreach (XmlElement match in element.FirstChild) 
                     {
                         Match newMatch = new Match();
                         newMatch.id = match.GetAttribute("id");
