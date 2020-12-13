@@ -33,7 +33,7 @@ namespace Beadando_IRF
 
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.InitialDirectory = Application.StartupPath;
-            //ofd.Filter = "XML Files (.xml)|.xml"; 
+            ofd.Filter = "XML Files|*.xml";
             ofd.DefaultExt = "xml";
             ofd.AddExtension = true;
             if (ofd.ShowDialog() != DialogResult.OK) return;

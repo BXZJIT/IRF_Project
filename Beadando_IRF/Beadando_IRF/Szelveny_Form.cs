@@ -24,7 +24,7 @@ namespace Beadando_IRF
             ShowSzelvenyElems();
             SetFinalOdd();
             SetProfit();
-            Smiley smileyFace = new Smiley();
+            Smiley smileyFace = new Smiley(finalOdds);
             panel1.Controls.Add(smileyFace);
         }
 
