@@ -68,7 +68,6 @@ namespace Beadando_IRF
                         Match newMatch = new Match();
                         newMatch.id = match.GetAttribute("id");
                         newMatch.time = match.GetAttribute("time");
-                        //Console.WriteLine("NewMatchId: " + match.GetAttribute("id"));
                         newMatch.categoryName = Bajnoksag_Listbox.SelectedItem.ToString();
                         string localTeam = "";
                         string visitorTeam = "";
@@ -80,21 +79,21 @@ namespace Beadando_IRF
                             {
                                 localTeam = matchChild.GetAttribute("name");
                                 newMatch.localTeam = localTeam;
-                                //Console.WriteLine("Localteam: " + matchChild.GetAttribute("name"));
+                               
                             }
 
                             if (matchChild.Name == "visitorteam")
                             {
                                 visitorTeam = matchChild.GetAttribute("name");
                                 newMatch.visitorTeam = visitorTeam;
-                                //Console.WriteLine("Visitorteam: " + matchChild.GetAttribute("name"));
+                               
                             }
                         }
 
                         // Meccs hozzáadása listához
                         newMatch.localAndVisitor = localTeam + "-" + visitorTeam + "-" + newMatch.time;
                         matches.Add(newMatch);
-                        //Console.WriteLine("LocalAndVisitor: " + localTeam + "-" + visitorTeam);
+                      
                     }
                 }
             }
@@ -130,7 +129,7 @@ namespace Beadando_IRF
                                     {
                                         if (oddsChild.GetAttribute("value") == "Match Winner")
                                         {
-                                            // Segéd sor
+                                            
                                             SzelvenyElem dummyElem = new SzelvenyElem();
                                             dummyElem.oddId = "dummy";
                                             dummyElem.oddNameAndValue = "Match Winner";
@@ -159,7 +158,7 @@ namespace Beadando_IRF
                                         // Both Teams to score típusú fogaád iterálása
                                         if (oddsChild.GetAttribute("value") == "Both Teams To Score")
                                         {
-                                            // Segéd sor
+                                       
                                             SzelvenyElem dummyElem = new SzelvenyElem();
                                             dummyElem.oddId = "dummy";
                                             dummyElem.oddNameAndValue = "Both Teams To Score";

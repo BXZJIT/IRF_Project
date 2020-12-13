@@ -78,7 +78,7 @@ namespace Beadando_IRF
         private void Exportalas_Button_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();
-            //Opcionális rész
+           
             sfd.InitialDirectory = Application.StartupPath;
             sfd.Filter = "Comma Seperated Values (.csv)|.csv";
             sfd.DefaultExt = "csv";
